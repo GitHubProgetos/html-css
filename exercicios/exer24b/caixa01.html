@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Modelos de caixas com shorthand</title>
+    <style>
+         h1 { /*Modelo de Box-level*/
+
+         /*display: inline;=> tag que muda para inline-level*/
+            background-color:rgb(187, 191, 194);
+            height: 300px;
+            width: 300px;
+
+            
+            border: 18px solid darkgray;
+
+            padding: 30px 18px 18px 18px;
+
+            margin: 30px auto 30px auto; /*Distância ou aproxima um bloco do outro e centraliza o bloco no meio do site*/
+
+            outline:5px dashed darkgray ; /*Coloca um pontilhado colado na margem*/
+            
+        }
+
+        a { /*Modelo de inline-level*/
+
+        /*display: block;=>tag que muda para box-level*/
+            border-width: 5px;
+            border-style: groove;
+            border-color: darkgrey;
+
+            padding-top: 18px; /*top encima*/
+            padding-right: 18px;/*right direita*/
+            padding-left: 18px;/*left esquerda*/
+            padding-bottom: 18px;/*bottom embaixo*/
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+    
+</body>
+</html>

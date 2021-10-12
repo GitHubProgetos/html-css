@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*
+Em HTML é id = em CSS é # (Só pode um elemento)
+Em HTML é class = em CSS é . (Pode vários elemenos)
+*/
+
+body {
+    background-color: #59C3C3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+H1 {
+    color: #2C363F;
+}
+
+H2 {
+    color: #2C363F;
+}
+
+h1#principal {
+    text-align: center;
+/* background-color: #c200fb;*/
+}
+
+p {
+    text-align: justify; /* <= O texto fica alinhado a direita e a esquerda*/
+    text-indent: 20px; /* <= Da margem ão primeiro paragrafo*/
+}
+
+.basico {
+    color: #c200fb;
+
+}
+
+.intermediario {
+    color: #EDD83D;
+
+}
+
+.avancado {
+    color: #FF2E00;
+
+}
+

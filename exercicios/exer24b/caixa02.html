@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;  /*header=>cabeçalho / head=>cabeça */
+            background-color: dimgray;
+            margin: 0px;                                /*main=>conteúdo principal*/
+        }                                               /*footer=>rodape*/
+                                                        /*nav=>cria um menu, lista de link*/
+        header {                                        /*section=>sessão*/
+            background-color: floralwhite;            /*article=>artigo*/
+            padding: 10px;                              /*aside=>a parte, de lado*/
+            margin: 10px;
+            border-radius: 10px;                            /*widht=>largura*/
+        }
+
+        main {
+            background-color:floralwhite;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color:floralwhite ;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(126, 120, 120);
+        }
+
+        nav {
+            background-color: rgb(112, 112, 112);
+            padding: 3px;
+            box-shadow: 3px 3px 3px rgba(15, 15, 15, 0.384);
+            
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: lightgray;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        footer > p {
+            margin: 0px;
+
+        }
+
+        p#taa {
+            font-weight: bold;
+            
+        }
+
+        p#adt {
+            font-weight: bold;
+            
+
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            padding: 1px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+       
+        
+
+       
+
+        
+
+
+    </style>
+</head>
+<body> 
+    <header>
+        <h1>Insight</h1>
+        <nav> 
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>     
+    <main>
+        <section id="assuntos">
+            <p id="taa">Insight technology </p>
+
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Insight technology</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero perspiciatis voluptatem tenetur, dolores iusto aliquam ab quae laborum temporibus ipsum nesciunt architecto inventore illum voluptatum velit, recusandae omnis dolor iste.</p>
+                <aside>
+                    <p id="adt">Site Desenvolvido por Insight technology </p></p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Insight technology </p>
+
+    </footer>
+    <div id="bola"></div> 
+</body>
+</html>
