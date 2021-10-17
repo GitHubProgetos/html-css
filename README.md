@@ -1,4 +1,6 @@
 # html-css
- Curso de HTML5 e CSS3
+ Curso de HTML5 e CSS3.
 
- Personalizando meu repositório
+ Personalizando meu repositório.
+
+ Git e GitHub treinamento.
