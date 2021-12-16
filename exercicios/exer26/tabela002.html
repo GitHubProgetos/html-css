@@ -21,6 +21,13 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: rgb(133, 132, 132);
             color: white;
@@ -37,6 +44,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         (1) table
+        caption=legenda da tabela
         =>(2) thead
         =>tr ,td ,th
         ===>(3) tbody
@@ -47,8 +55,9 @@
     -->
     <Table>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <caption>População das Unidades Federativas</caption>
+            <th scope="col" >Estado</th>
+            <th scope="col"style=" width: 50px;" >População</th>
 
         </thead>
         <tbody>
@@ -76,7 +85,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>0000</strong></td>
                 
             </tr>
