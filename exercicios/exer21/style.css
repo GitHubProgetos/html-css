@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
-Em HTML é id = em CSS é # (Só pode um elemento)
-Em HTML é class = em CSS é . (Pode vários elemenos)
+Em HTML é id = em CSS é # (Só pode um elemento por documento)
+Em HTML é class = em CSS é . (Pode vários elemenos por documento)
 */
 
 body {
