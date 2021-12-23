@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Pseudo-elements ::after e ::before do CSS</title>
+    <style>
+        body {
+            padding-top: 60px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #8844ee;
+        }
+
+        h1::after, h1::before {
+            content: '';
+            width: 200px;
+            height: 4px;
+            background: #8844ee;
+            display: block;
+            margin: 20px auto;
+        }
+
+        p {
+            text-align: center;
+            font-family: Georgia;
+            color: #010101;
+            max-width: 500px;
+            line-height: 1.5em;
+            margin: 20px auto;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Como utilizar os Pseudo-elements ::after ::before</h1>
+    <p>Como utilizar os Pseudo-elements ::after e ::before do CSS</p>
+    
+</body>
+</html>
