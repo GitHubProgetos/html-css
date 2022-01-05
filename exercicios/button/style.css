@@ -36,3 +36,34 @@ body {
     transform: translate(0px, -5px);
     transition: transform 0.9s;
 }
+
+.btn-2 {
+    background-color: #33b5e5;
+    border-radius: ;
+    border-bottom: 5px solid #177294;
+    color: black;
+    transition: transform 0.9s;
+}
+
+.btn-2:hover {
+    background-color: #56d2ff;
+    box-shadow: 0px 0px 20px #56d2ff;
+    transform: translate(0px, -5px);
+    transition: transform 0.9s;
+}
+
+.btn-3 {
+    background-color: #f82b2b;
+    border-radius: 50px;
+    border-bottom: 5px solid #ca0202;
+    color: black;
+    transition: transform 0.9s;
+    color: white;
+}
+
+.btn-3:hover {
+    background-color: #ff2929;
+    box-shadow: 0px 0px 20px #ff2929;
+    transform: translate(0px, -5px);
+    transition: transform 0.9s;
+}
