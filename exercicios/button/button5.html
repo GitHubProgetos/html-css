@@ -8,6 +8,11 @@
     <link rel="shortcut icon" href="html.ico" type="image/x-icon">
     <title>Button Five</title>
     <style>
+        
+        @font-face {
+            font-family: 'Patron';
+            src: url(Patron\ -\ PersonalUse.otf);
+        }
 
 
         * {
@@ -25,27 +30,28 @@
         }
 
         .button {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Patron;
             font-size: 35px;
             padding: 20px 180px;
-            background-color: orange;
+            background-color: gold;
             text-decoration: none;
             color: black;
-            font-weight: bold;
-            border-bottom: 5px solid rgb(131, 85, 1)
             transition: transform 0.5s;
+            border-bottom: 5px solid rgb(126, 107, 1);
+            border-radius: 30px;
+            
         }
 
         .button:hover {
-            background-color: rgb(177, 124, 25);
-            box-shadow: rgb(177, 124, 25);
+            background-color: rgb(243, 214, 52);
+            box-shadow:0px 0px 60px rgb(190, 132, 22);
             transform: translate(0px, -10px);
             transition: transform 0.5s;
         }
     </style>
 </head>
 <body>
-    <a href="#" class="button">BUTTON</a>
+    <a href="#" class="button">BUTTON FIVE</a>
     
 </body>
 </html>
