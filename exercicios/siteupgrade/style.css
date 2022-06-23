@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #18929d;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 250;
+    
+}
+
+nav li a::after {
+    content: '';
+    height: 1px;
+    width: 0%;
+    background-color: white;
+    display: block;
+    transition: .3s ease-in-out;
+}
+
+nav li a:hover::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    display: block;
+}
+
+.banner {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.281),rgba(0,0,0,0.308)),url('banner03.jpg')
+}
+
+.texto .titulo {
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.texto .sub_titulo {
+    color: white;
+    font-size: 58px;
+    font-weight: 600;
+}
+
+.texto .botoes {
+    margin-top: 30px;
+}
+
+.texto .botoes button {
+    height: 50px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.texto .botoes button.n-overlay {
+    color: white;
+    background: none;
+    border: 1px solid white;
+}
+
+.texto .botoes button.n-overlay:hover {
+    color: black;
+    background-color: white;
+}
+
+.texto .botoes button.overlay {
+    background-color: white;
+    color: black;
+    animation: vibrar 0.5s ease-in-out infinite both;
+}
+
+@keyframes vibrar {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
