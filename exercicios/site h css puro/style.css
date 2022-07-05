@@ -8,11 +8,12 @@
 }
 
 nav {
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(48, 48, 189);
     padding: 10px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: transparent;
 }
 
 nav .logo a{
