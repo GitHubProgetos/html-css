@@ -9,7 +9,7 @@ a {
 }
 
 body {
-    background-color: #34344b;
+    background-color: #00082f;
     font-family: 'Roboto', sans-serif;
     
 }
@@ -73,6 +73,7 @@ footer {
     font-weight: 500;
     font-size: 12px;
     color: white;
+    opacity: 0.6;
     transition: opacity 400ms;
 }
 
