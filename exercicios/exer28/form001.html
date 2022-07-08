@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
     <h1>Primeiro Formulário</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobre nome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
 </body>
 </html>
