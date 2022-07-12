@@ -63,10 +63,11 @@ ul li a {
     margin-bottom: 16px;
     border-radius: 6px;
     transition:  background-color 400ms;
+    
 }
 
 ul li a:hover {
-    background-color: #4065a8;
+    background-color: #1e3663;
 }
 
 footer {
