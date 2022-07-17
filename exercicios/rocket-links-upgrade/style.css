@@ -84,3 +84,7 @@ footer:hover {
 footer a {
     color: #00082f;
 }
+
+.yo img {
+    max-width: 20px;
+}
