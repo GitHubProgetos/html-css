@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -24,15 +24,6 @@ body.dark {
     background-color: #202024;
     border-radius: 6px;
     border: 1px solid #323238;
-}
-
-.fa-brands {
-    margin-right: 7px;
-    font-size: px;
-}
-
-.fa-solid {
-    margin-right: 7px;
 }
 
 img {
@@ -64,27 +55,33 @@ p.username {
     color: white;
 }
 
-ul li a {
+.fa-brands {
+    margin-right: 7px;
+}
+
+.fa-solid {
+    margin-right: 7px;
+}
+
+ul li a { /*<= ul li a*/
     height: 53px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
-    border: 1px solid #04d361;
     color: white;
-    /*text-transform: uppercase;*/
     font-size: 14px;
     margin-bottom: 16px;
     border-radius: 6px;
-    transition: background 800ms;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #323238;
 }
 
 ul li a:hover {
-    background-color: #04d36146;
-    color: white;
+    border: 1px solid #04d361;
+    border-radius: 6px;
 }
-
-
 
 footer {
     /*font-weight: 600;*/
@@ -102,4 +99,3 @@ footer:hover {
 footer a {
     color: #996DFF;
 }
-
