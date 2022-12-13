@@ -76,11 +76,14 @@ ul li a { /*<= ul li a*/
     overflow: hidden;
     cursor: pointer;
     background-color: #323238;
+    /*transition: background-color, transform 0.4s;*/
+    transition:  background-color 400ms;
 }
 
 ul li a:hover {
     border: 1px solid #04d361;
     border-radius: 6px;
+    /*transform: scale(1.08);*/
 }
 
 footer {

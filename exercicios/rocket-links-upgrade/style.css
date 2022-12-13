@@ -28,12 +28,18 @@ body.dark {
 
 .fa-brands {
     margin-right: 7px;
-    font-size: px;
+    
 }
 
 .fa-solid {
     margin-right: 7px;
 }
+
+
+
+
+
+
 
 img {
     width: 100%;
@@ -76,13 +82,18 @@ ul li a {
     font-size: 14px;
     margin-bottom: 16px;
     border-radius: 6px;
-    transition: background 800ms;
+    /*transition: background 800ms;*/
+    transition: background-color, transform 0.4s;
 }
 
 ul li a:hover {
     background-color: #04d36146;
     color: white;
+    transform: scale(1.09);
+
 }
+
+
 
 
 
