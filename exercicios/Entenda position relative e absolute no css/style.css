@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box-one {
+    background-color: cyan;
+}
+
+/*.box-two {
+    background-color: yellow;
+    position: absolute;
+    opacity: 85%;
+    top: 50%;     <= Duas fomar de sentralizar a div no centro essa mais antiga.
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+ }
+*/
+ .box-two {
+    background-color: yellow;
+    position: absolute;
+    opacity: 85%;/*<=Essa um pouco mais moderna pode ter qualquer width e height que funciona*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*display: grid;*/
+    /*place-items: center;<=primeira forma de alinhar a div filho no meio b2*/
+    display: flex;
+    align-items: center;/*<=Segunda forma de alinhar a div filho no meio b2*/
+    justify-content: center;
+ }
+
+
