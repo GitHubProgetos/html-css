@@ -8,6 +8,9 @@
 .box {
     width: 100px;
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box-one {
@@ -33,9 +36,10 @@
     transform: translate(-50%,-50%);
     /*display: grid;*/
     /*place-items: center;<=primeira forma de alinhar a div filho no meio b2*/
-    display: flex;
-    align-items: center;/*<=Segunda forma de alinhar a div filho no meio b2*/
-    justify-content: center;
+    /*=========================================================================*/
+    /*display: flex;/*<=Essa configução foi mudada para a .box*/
+    /*align-items: center;/*<=Segunda forma de alinhar a div filho no meio b2*/
+    /*justify-content: center;
  }
 
 

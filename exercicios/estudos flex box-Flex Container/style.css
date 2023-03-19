@@ -1,0 +1,122 @@
+@charset 'UTF-8';
+
+/* Flex */
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-item-1 {
+	flex: 1;
+}
+
+/* Flex Item */
+.item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+}
+
+/*
+
+flex-direction: row;
+// Os itens ficam em linha
+===========================================================================
+flex-direction: row-reverse;
+// Os itens ficam em linha reversa, ou seja 3, 2, 1.
+===========================================================================
+flex-direction: column;
+// Os itens ficam em uma única coluna, um embaixo do outro.
+===========================================================================
+flex-direction: column-reverse;
+// Os itens ficam em uma única coluna, um embaixo do outro, porém em ordem reversa: 3, 2 e 1.
+<<===========================================================================>>
+flex-wrap: nowrap;
+// Valor padrão, não permite a quebra de linha.
+===========================================================================
+flex-wrap: wrap;
+// Quebra a linha assim que um dos flex itens não puder mais ser compactado.
+===========================================================================
+flex-wrap: wrap-reverse;
+// Quebra a linha assim que um dos flex itens não puder mais ser compactado. A quebra é na direção contrária, ou seja para a linha acima.
+<<===========================================================================>>
+flex-flow: row nowrap;
+// Coloca o conteúdo em linha e não permite a quebra de linha.
+===========================================================================
+flex-flow: row wrap;
+// Coloca o conteúdo em linha e permite a quebra de linha.
+============================================================================
+flex-flow: column nowrap;
+// Coloca o conteúdo em coluna e não permite a quebra de linha.
+<<============================================================================>>
+justify-content: flex-start;
+// Alinha os itens ao início do container.
+============================================================================
+justify-content: flex-end;
+// Alinha os itens ao final do container.
+============================================================================
+justify-content: center;
+// Alinha os itens ao centro do container.
+============================================================================
+justify-content: space-between;
+// Cria um espaçamento igual entre os elementos. Mantendo o primeiro grudado no início e o último no final.
+============================================================================
+justify-content: space-around;
+// Cria um espaçamento entre os elementos. Os espaçamentos do meio são duas vezes maiores que o inicial e final.
+<<=============================================================================>>
+align-items: stretch;
+// Valor padrão, ele que faz com que os flex itens cresçam igualmente.
+=============================================================================
+align-items: flex-start;
+// Alinha os itens ao início.
+=============================================================================
+align-items: flex-end;
+// Alinha os itens ao final.
+=============================================================================
+align-items: center;
+// Alinha os itens ao centro.
+=============================================================================
+align-items: baseline;
+// Alinha os itens de acordo com a linha base da tipografia.
+<<=============================================================================>>
+align-content: stretch;
+// Valor padrão, ele que faz com que os flex itens cresçam igualmente na vertical.
+==============================================================================
+align-content: flex-start;
+// Alinha todas as linhas de itens ao início.
+==============================================================================
+align-content: flex-end;
+// Alinha todas as linhas de itens ao final.
+==============================================================================
+align-content: center;
+// Alinha todas as linhas de itens ao centro.
+==============================================================================
+align-content: space-between;
+// Cria um espaçamento igual entre as linhas. Mantendo a primeira grudada no topo e a última no bottom.
+===============================================================================
+align-content: space-around;
+// Cria um espaçamento entre as linhas. Os espaçamentos do meio são duas vezes maiores que o top e bottom.
+
+*/
