@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Underline</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        background-color: #111;
+        min-height: 100vh;
+    }
+
+    .container h1 {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #f2f2f2;
+        font-size: 3.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+    .container h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 5px;
+        width: 0%;
+        background-color: #a7f960;
+        transition: 0.5s;
+    }
+
+    .container h1:hover::after {
+        width: 100%;
+        box-shadow: 0 0 7px 5px #5bc500;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <a href="https://www.youtube.com/watch?v=Yq6J7EIz8i0" target="_blank">
+            <h1>Spoofing</h1>
+        </a>
+    </div>
+</body>
+</html>

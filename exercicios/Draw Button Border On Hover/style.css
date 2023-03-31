@@ -9,6 +9,8 @@
 }
 
 body {
+    flex-direction: column;
+    gap: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +28,7 @@ a {
     font-weight: 400;
     color: rgba(255,255,255,0.4);
     background-color: #262c37;
-    padding: 20px 40px;
+    padding: 20px 80px;
     /*border-radius: 10px;*/
     transition: .5s;
 }

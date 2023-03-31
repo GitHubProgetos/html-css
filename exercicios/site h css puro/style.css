@@ -44,17 +44,21 @@ nav li a {
 
     nav li a::after {
         content: '';
-        width: 0;
+        width: 0%;
         height: 2px;
         background-color: #fff;
-        margin: auto;
+        margin: auto;/*<==Faz mudar o sentido do efeito do meio para as bordas*/
         display: block;
+        transition: .5s /*ease-in-out*/;
     }
 
 nav li a:hover::after {
     background-color: #fff;
     width: 100%;
-    transition: width 0.3s linear ;
+    transition: width 0.2s linear ;
+    content: '';/*<==*/
+    height: 2px;
+    display: block;
     }
 
 .banner {
