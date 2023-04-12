@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Gradient Button Hover</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body, html {
+        height: 100%;
+        background: #1d1e22;
+        }
+
+    .gradient-border {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #000;
+        padding: 1.9em 2.9em;
+        font-family: Poppins, sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 1px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .gradient-border::before,
+    .gradient-border::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        border-radius: inherit;
+        background: inherit;
+    }
+
+    .gradient-border::before {
+        background: linear-gradient(90deg,  #fed90f, #ff00d2, #00a2ff, #09f1b8,
+                                            #fed90f, #ff00d2, #00a2ff, #09f1b8);
+        background-size: 200% 200%;
+    }
+
+    .gradient-border::after {
+        margin: 2px;
+    }
+
+    .gradient-border:focus,
+    .gradient-border:active {
+        outline: none;
+    }
+
+    .gradient-border:hover::before,
+    .gradient-border:focus::before {
+        animation: gradientBorder 1.5s linear infinite;
+    }
+
+
+    @keyframes gradientBorder {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        100% {
+            background-position: 200% 50%;
+        }
+
+    }
+</style>
+<body>
+    <a href="#">
+        <button class="gradient-border">
+            <span>Gradient Border</span>
+        </button>
+    </a>
+</body>
+</html>

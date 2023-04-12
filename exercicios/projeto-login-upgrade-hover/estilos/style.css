@@ -67,18 +67,20 @@ section#login {
     transform: translate(-50%, -50%);
     overflow: hidden; /*Tudo que estiver fora da borda fica escondido*/
     border: 1px solid #ff005c ;
+    
 }
 
 
-/*section#login {
+section#login {
     
-    border-width: 1px;
-    border-style: solid;
-    border-image: linear-gradient(20deg, #ff2475 ,#23e3f8, #ff2475,#23e3f8  ) 1;
+    
+   /* border-width: 1px;*/
+   /* border-style: solid;*/
+    /*background: linear-gradient(20deg, #ff2475 ,#23e3f8, #ff2475,#23e3f8  );*/ 
     border-image: linear-gradient(to right, #ff2475 ,#23e3f8, #ff2475,#23e3f8  ) 1;
-    border-image: linear-gradient(5deg, #ff2475 ,#23e3f8 ) 1 ;
+    /*border-image: linear-gradient(5deg, #ff2475 ,#23e3f8 ) 1 ;*/
     
-}*/
+}
 
 
 section#login > div#foto {

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Underline Hover Animation</title>
+</head>
+
+<style>
+    h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        cursor: pointer;
+        font-size: 45px;
+        
+       
+    }
+
+    h2::before {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        height: 5px;
+        width: 100%;
+        border-radius: 25px;
+        transform: scaleX(0);
+        background: cyan;
+        transform-origin: right;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    h2:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    </style>
+
+<body>
+        <a href="#">
+            <h2>Animation</h2>
+        </a>
+</body>
+
+</html>

@@ -7,6 +7,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 nav {
     background-color: #20853b;
     padding: 10px 60px;
@@ -23,30 +25,35 @@ nav .logo a{
 }
 
 nav ul {
+    position: relative;
     display: flex;
     align-items: center;
     list-style: none;
     padding: 10px;
+  
 }
 
 nav li {
-    margin-left: 2px;
+
+    
+   
 }
 
 nav li a {
+    
+  
     text-decoration: none;
     color: white;
     font-size: 18px;
     font-weight: 300;
     padding: 8px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
+   /* border-radius: 5px;*/
+    transition: 1s;
+    line-height: 25px;
+   margin-left: 20px;/*<==*/
 }
 
-nav li a:hover {
-    background-color: #fff;
-    color: black;
-}
+
 
 .banner {
     text-align: center;

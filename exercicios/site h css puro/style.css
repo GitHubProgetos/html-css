@@ -45,9 +45,9 @@ nav li a {
     nav li a::after {
         content: '';
         width: 0%;
-        height: 2px;
+        height: 1px;
         background-color: #fff;
-        margin: auto;/*<==Faz mudar o sentido do efeito do meio para as bordas*/
+        /*margin: auto;/*<==Faz mudar o sentido do efeito do meio para as bordas*/
         display: block;
         transition: .5s /*ease-in-out*/;
     }
@@ -57,7 +57,7 @@ nav li a:hover::after {
     width: 100%;
     transition: width 0.2s linear ;
     content: '';/*<==*/
-    height: 2px;
+    height: 1px;
     display: block;
     }
 

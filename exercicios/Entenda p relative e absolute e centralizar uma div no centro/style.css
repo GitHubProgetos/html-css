@@ -27,6 +27,17 @@
     margin-left: -50px;
  }
 */
+
+/*body {
+    margin: 0;
+    padding: 0;
+    display: flex; <==Outra forma de sentralizar a div ao centro
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}*/
+
+
  .box-two {
     background-color: yellow;
     position: absolute;
