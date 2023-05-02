@@ -1,0 +1,189 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(assets/bg.jpg);
+    background-position-x: 52%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*overflow: hidden;*/
+}
+
+.posi {
+   
+    background-position-x: center right;
+}
+
+
+
+
+
+            /*Sessão header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 43px;
+    margin-bottom: 1px;
+}
+
+header .logo {
+    width: 115px;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    font-size: 13px;
+    border-bottom: 2px solid transparent;
+    transition: all .6s;
+}
+
+.navigation ul li a:hover {
+    border-bottom: 2px solid #138ecc;
+}
+
+.navigation .search {
+    width: 18px;
+    cursor: pointer;
+    filter: invert(1);
+}
+        /*================*/
+
+        /*Sessão main*/
+
+main {
+    display: flex;
+    margin-top:1.5em;
+    max-width: 47em;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2.5em;
+   
+}
+
+.logoboys {
+    margin: 1em 0em 1em 0;
+    width: 26em;
+    margin-right: 10px;
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+} 
+
+.btn-box .btn {
+    padding: 13px 38px;
+    background: #425265;
+    color: #fff;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #fff;
+    transition: all .3s;
+    font-size: 13px;
+}
+
+.btn:hover {
+    background: #2d3846;
+}
+
+.btn:focus {
+    background: #2d3846;
+}
+
+.text {
+    color: #fff;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.btn-box2 {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: #0f79af;
+    padding: 7px 35px;
+    margin-top: 1em;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 4px solid #fff;
+    font-size: 19px;
+    gap: 15px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn-box2:hover {
+    background: #138ecc;
+}
+
+.play {
+    width: 1.2em;
+    filter: invert(1);
+}
+
+        /*================*/
+
+         /*Sessão footer*/
+
+footer .cards {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    margin-left: 29em;
+    margin-top: 1.1em;
+}
+
+footer .cards .card {
+    height: 130px;
+    max-width: 300px;
+    box-shadow: 12px 0px 32px 2px black;
+    margin-left: -120px;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+footer .cards .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards .card:hover {
+    transform: translateY(-16px) rotate(3deg);
+}
+
+.cards .card:hover ~ .card {
+    transform: translateX(140px);
+}
+
+
+
+
+
+
+
