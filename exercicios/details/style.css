@@ -1,0 +1,28 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+summary {
+    /*all: unset;*/
+    padding: 16px;
+    color: rgb(255 255 255 /.6);
+    background: rgb(16 28 34);
+    width: 100%;
+    cursor: pointer;
+}
+
+details {
+    background-color: rgb(12 12 14);
+    color: #fff;
+}
+
+ul {
+    padding-bottom: 16px;
+    font-size: 0.8rem;
+}
+
+li + li {
+    margin-top: 0.5rem;
+}

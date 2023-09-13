@@ -1,0 +1,275 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Dhurjati';
+    transition: .6s;
+}
+
+--root {
+    --Color1: #172228;
+    --color2: #ea0046;
+}
+
+.header {
+    min-height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #172228;
+    z-index: 99;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 80px;
+    letter-spacing: 1px;
+}
+
+/* ul {
+    display: flex;  obs pode usar as duas formas para colocar os itens em linha
+}*/
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    margin: 0 20px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+
+ul li:hover a {
+    color: #ea0046;
+}
+
+i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+i:hover {
+    color: #ea0046;
+    cursor: pointer;
+}
+
+.header .fa-user {
+    display: none;
+}
+
+button {
+    padding: 8px 24px;
+    color: #fff;
+    background-color: #ea0046;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid #ea0046;
+}
+
+button:hover {
+    background-color: #172228;
+    color: #ea0046;
+}
+
+
+
+
+
+
+
+.login-section #top-btn {
+    margin-right: 20px;
+}
+
+.header .fa-bars {
+    font-size: 1.3rem;
+    padding: 8px;
+    border: 1px solid #ea0046;
+    display: none;
+}
+
+.header .fa-bars:hover {
+    color: #ea0046;
+}
+
+/*Sessão Hero section*/
+.hero-section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 150px;
+    background-image: url(img/download.jpeg);
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section h2 {
+    font-size: 2.8rem;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: -85px;
+    text-transform: uppercase;
+}
+
+.hero-section h1 {
+    margin-bottom: 10px;
+    font-size: 7rem;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero-section span {
+    color: #ea0046;
+}
+
+.hero-section p {
+    margin-top: -65px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+#Tournament {
+    margin-right: 15px;
+}
+
+ @media (max-width:1100px) {
+    .header .fa-bars {
+        display: block;
+    }
+
+    .header {
+        position: relative;
+        justify-content: space-around;
+    }
+
+    ul {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        height: 450px;
+        width: 100%;
+        background-color: #172228;
+    }
+
+    ul li {
+        display: block;
+        border-bottom: 1px solid #999;
+        width: 99%;
+        margin: 10px 0;
+        padding: 10px 0;
+        border-radius: 10px;
+    }
+
+    ul li:hover {
+        border-color: #ea0046;
+    }
+
+    ul li:last-child {
+        border: 0;
+    }
+
+    .header .fa-user {
+        position: absolute;
+        display: block;
+        right: 25%;
+    }
+
+    .login-section {
+        position: absolute;
+        top: 99%;
+        right: 15%;
+        background-color: #172228;
+        height: 85px;
+        padding: 20px;
+        border-radius: 3px;
+        opacity: 0;
+    }
+
+    .open {
+        left: 0;
+    }
+
+    .show {
+        opacity: 1;
+    }
+ }
+
+ @media (max-width:900px){
+    .hero-section h2 {
+        padding-bottom: 15px;
+        font-size: 2.5rem;
+    }
+
+    .hero-section h1 {
+        font-size: 6rem;
+    }
+
+    .hero-section {
+        background-position: center;
+        background-position-x: 35%;
+    }
+
+    .hero-section p {
+        padding-top: 13px;
+    }
+}
+
+ @media (max-width:768px){
+    
+    .hero-section {
+        padding: 0 25px;
+        background-position-x: 35%;
+    }
+
+    
+}
+
+@media (max-width:555px){
+
+    .hero-section {
+        background-position-x: 36%;
+
+    }
+
+    .hero-section h2 {
+        font-size: 2rem;
+        margin-bottom: -50px;
+    }
+
+    .hero-section h1 {
+        font-size: 4rem;
+    }
+
+    .hero-section p {
+        margin-top: -40px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+

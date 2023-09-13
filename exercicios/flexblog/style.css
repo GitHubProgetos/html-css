@@ -56,6 +56,7 @@ img {
 
 .menu-bg {
     background: #2c70ff;
+    
 }
 
 .menu {
@@ -66,6 +67,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .menu a {
@@ -98,15 +100,14 @@ img {
 }
 
 .login {
-    max-width: 22px;
+    max-width: 29px;
     display: inline-table;
-    
-    
 }
 
 .login:hover {
     transform: translate(3px);/*<=------------------*/
     transition: transform .3s;
+
 }
 
  .iconi {
@@ -118,7 +119,7 @@ img {
 
 .menu-nav a::after {
     content: '';
-    height: 2px;
+    height: 1px;
     width: 0%;
     background-color: white;
     display: block;
@@ -129,7 +130,7 @@ img {
 
 .menu-nav a:hover::after {
     content: '';
-    height: 2px;
+    height: 1px;
     width: 100%;
     background-color: white;
     display: block;
@@ -582,6 +583,14 @@ transition: all 0.35s ease;
          transform: scale(1);
      }
  }
+
+                    /*=================*/
+
+                    /*Sessão scroll suave*/
+
+html {
+    scroll-behavior: smooth;
+}
 
 
 

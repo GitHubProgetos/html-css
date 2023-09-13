@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /*text-align: center;/*<==centraliza o container no meio da tela
+    margin-top: 40vh;*/
+}
+
+.box {
+    width: 20rem;
+    height: 10rem;
+    background-color: rgb(6, 252, 6);
+    font-size: 30px;
+    color: #fff;
+    place-items: center;/*<==cetraliza a div filho no meio*/
+    display: grid;
+}
