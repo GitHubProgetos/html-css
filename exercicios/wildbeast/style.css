@@ -154,5 +154,23 @@ a {
 /*CONTENT*/
 
 .content {
-    
+    display: grid;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.col-wide {
+    grid-column: 1 / -1;
+}
+
+.imagem-1 {
+    grid-row: span 2 ;
+    align-self: end;
+}
+
+.imagem-2 {
+    align-self: end;
 }
