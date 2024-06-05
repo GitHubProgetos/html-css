@@ -38,7 +38,7 @@ body {
 
 .btn-2 {
     background-color: #33b5e5;
-    border-radius: ;
+    border-radius: 10px;
     border-bottom: 5px solid #177294;
     color: black;
     transition: transform 0.9s;

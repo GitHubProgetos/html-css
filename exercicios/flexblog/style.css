@@ -505,13 +505,36 @@ transition: all 0.35s ease;
     flex: 3 1 200px;
     font-size: 1.25em;
     color: #7c7c7c;
-    border: 4px solid #2c70ff;
+    border: 1px solid #2c70ff;
     background: transparent;
     padding: 15px 10px;
     margin: 0px;
     border-radius: 0px;
     font-family: 'Nunito', Helvetica, Arial, sans-serif;
+    transition: ease .3s;
+    outline: none;
 }
+
+.newsletter-form input:hover {
+    box-shadow: 0px 0px 15px 2px #0b51e9a8;
+    
+}
+
+.newsletter-form button:hover {
+    box-shadow: 0px 0px 15px 2px #0b51e9a8;
+}
+
+.newsletter-form input:focus {
+    box-shadow: 0px 0px 15px 2px #0b51e9a8;
+    outline: auto;
+    color: #0351fa;
+}
+
+.newsletter-form button:focus {
+    box-shadow: 0px 0px 15px 2px #0b51e9a8;
+    border: 1px solid #0051ff;
+}
+
 
 .newsletter-form button {
     flex: 1 1 200px;
@@ -526,6 +549,7 @@ transition: all 0.35s ease;
     padding: 15px 10px;
     transition: 0.3s;
     font-family: 'Nunito', Helvetica, Arial, sans-serif;
+    transition: ease .3s;
 }
 
 @media (max-width:600px) {

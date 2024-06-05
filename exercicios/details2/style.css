@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+details {
+   border: 2px solid #4e4e4e;
+   padding: 15px;
+   border-radius: 4px;
+   margin-bottom: 20px;
+   cursor: pointer;
+}
+
+.text {
+    margin-top: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+summary {
+    color: #e2e60f;
+    font-size: 20px;
+}
+
+body {
+    background: #383838;
+}
+
+.centro {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}

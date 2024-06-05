@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9e5e5;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 1000px;
+}
+
+.accordion {
+    background-color: #fff;
+    /*border-radius: 6px;*/
+    /*padding: 12px;*/
+    cursor: pointer;
+
+}
+
+
+
+
+
+.accordion-header {
+    width: 100%;
+    /*border: none;*/
+    border: 2px solid #222222;
+    padding: 12px;
+    /*background-color: transparent;*/
+    background-color: #e9e5e5; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    cursor: pointer;
+    height: 80px;/*<====*/
+    transition: .4s;
+}
+
+.accordion-header:hover {
+    background-color: #ffffff;
+    /*border-radius: 6px;*/
+    padding: 30px;
+    
+}
+
+
+.accordion-header span {
+    max-width: 100%;
+    white-space: nowrap;/* <=PARA ELE NÃO QUEBRAR*/
+    overflow: hidden;/* <=NÃO DEIXA SAIR PARA FORA*/
+    text-overflow: ellipsis;/* <=FORMA TRÊS PONTINHOS DEIXANDO MAIS BONITO*/
+    
+}
+
+span {
+    font-weight: 600;
+    color: #222222;
+    font-size: 20px;
+    
+}
+
+p {
+    font-style: italic;
+}
+
+.accordion-body {
+    background-color: #ffffff;
+    color: #6e6363;
+    font-size: 16px;
+    opacity: 0;
+    height: 0;
+    transition: opacity .3s;
+    overflow: hidden;
+    
+    border-left: 2px solid #222222;
+    border-right: 2px solid #222222;
+    border-bottom: 2px solid #222222;
+}
+
+.accordion-body.active {
+    opacity: 1;
+    height: 100%;
+    padding: 15px 15px 15px;
+    background-color: #e9e5e5;
+  
+}
+
+.accordion:has(.active) .arrow {
+    transform: rotate(180deg);
+}
+
+.arrow {
+    transition: transform .2s linear;
+}
+
+.fa-regular {
+    margin-left: 30px;
+    color: #797171;
+}
+
+
