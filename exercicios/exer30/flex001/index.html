@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            display: flex;
+            background-color: rgb(63, 55, 13);
+        }
+
+        div.item {
+            background-color: black;
+            color: white;
+            flex: auto;/*<=Para o item ficar fluido ocupando o espaço por igual.*/
+            text-align: center;
+        }
+
+        body {
+            background-color: rgb(184, 182, 182);
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
