@@ -1,0 +1,381 @@
+
+                            /* Sessão reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'ELNATH';*/
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+/*
+@font-face {
+    font-family: 'ELNATH';
+    src: url('Gravidaz.otf') format('opentype'), url('') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ */           
+ 
+ /*
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+                            
+
+
+.interface {
+    /*max-width: 960px;*/
+    max-width: 1200px;
+    margin:  0 auto;
+}
+                                /* Sessão reset /*/
+
+                                /* Sessão header */
+
+header {
+    width: 100%;
+    padding: 0px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*header .logo img {
+    max-width: 210px;
+    filter: invert(1);
+}
+*/
+
+.arrown{
+    color: #fff;
+    font-size: 145px;
+}
+
+header .menu-desktop nav ul {
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+header .menu-desktop nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: initial;
+    
+}
+
+header .btn-contato button {
+    cursor: pointer;
+    /*padding: 12px 22px;*/
+    padding: 11px 27px;
+   /* width: 140px;*/
+   /* height: 50px;*/
+    font-size: 15px;
+    border-radius: 15px 2px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff ;
+    outline: none;
+    transition: .5s;
+}
+                        /* Sessão header / */
+
+                        /* Sessão header menu hover */
+
+header .menu-desktop nav ul li a::after {
+    content: '';
+    height: 1px;
+    width: 0%;
+    background-color: #fff;
+    display: block;
+    transition: .3s ease;  /*<==ease-in-out*/
+    border-radius: 50px;
+    margin-top: 1px;
+   
+}
+
+header .menu-desktop nav ul li a:hover::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-top: 1px;  /*<= da um espaço entre a palavra e o efeito hover*/
+}
+
+                         /* Sessão header menu hover /*/
+/*
+header .btn-contato button:hover {
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+}
+*/
+                        /*Sessão estilos do hero-site */
+
+section.hero-site {
+    height: 100vh;
+    background-image: url(../images/bg-inicio-site.jpg);
+    /*background-image: url(../images/bg-inicio-site2.jpeg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-position-y: 1%;
+    color: #fff;
+}
+
+
+
+
+.hero-site .interface {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-site .txt-hero h1 {
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 100px;
+    line-height: 75px;
+    
+    
+}
+
+.hero-site .txt-hero p {
+    font-weight: 400;
+    line-height: 25px;
+    margin: 20px 0;
+    font-size: 18px;
+    margin-top: 29px;
+}
+
+.btn-2 {
+    cursor: pointer;
+    padding: 12px 27px;
+   /* width: 140px;*/
+   /* height: 50px;*/
+    font-size: 15px;
+    border-radius: 15px 2px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 20px;
+
+}
+
+                            /*Sessão estilos do hero-site /*/
+
+                            /*Sessão estilos accordion*/
+ul {
+    list-style: none;
+}
+
+
+
+li {
+    display: inline-block;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+    font-size: 15px;
+}
+
+a:hover {
+    color:rgba(255, 255, 255, 0.651);
+}
+
+.nav-items {
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+.drop-down {
+    display: none;
+    position: absolute;
+    top: 30px;
+    cursor: pointer;
+    width: 159px;
+    
+}
+
+.drop-down > li {
+    position: relative;
+    width: 157px;
+    color: #fff;
+    padding: 3px;
+    margin: 1px;
+    /*background-color: rgba(0, 0, 0,0.2);*/
+   box-shadow: 1px 2px 8px rgba(255, 255, 255, 0.308);
+}
+
+
+
+.nav-items li:hover .drop-down {
+    display: block;
+   
+}
+
+.drop-down li:hover .sub-menu {
+    display: block;
+    
+}
+
+
+
+.nav-items li {
+    position: relative;
+    font-size: 15px;
+
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: -1px;
+    z-index: 1;
+    /*left: 191px;*/
+    right: 191px;
+    /*width: 190px;*/
+    width: 159px;
+    
+}
+
+
+.sub-menu > li{
+    position: relative;
+    width: 190px;
+    /*background-color: rgba(0, 0, 0,0.2);*/
+    box-shadow: 1px 2px 8px rgba(255, 255, 255, 0.267);
+    padding: 3px;
+    margin: 1px;
+    
+    
+}
+
+
+
+
+
+
+
+
+                    /*Sessão estilos accordion /*/
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+.side-bar {
+    width: 50px;
+    height: 100vh;
+    /*background: linear-gradient(#00545d, #000729);*/
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 15px;
+    
+}
+
+
+
+
+
+.social-links , .usefull-links{
+    display: flex;
+    flex-direction: column;
+    /*width: 80px;*/
+    margin: 6px auto;
+    color: #fff;
+}
+
+.social-links{
+    
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    
+}
+
+.usefull-links{
+
+    text-align: center;
+    position: absolute;
+    bottom: 60px;
+    transform: translateY(-20%);
+    
+}
+
+.arroww{
+    margin-top: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, .2);
+    /*border-radius: 50%;*/
+    border-radius: 15px 2px;
+    padding: 9px;
+    color: #fff;
+}
+
+.arrowww{
+    margin-top: 25px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, .2);
+    
+    /*border-radius: 50%;*/
+    border-radius: 15px 2px; 
+    padding: 9px;
+    color: #fff;
+}
+
+
+
+
+
+
+/*
+p {
+    font-family: 'ELNATH';
+    letter-spacing: 2px;
+    line-height: 20px; 
+    font-weight: 900;
+    font-size: 13px;
+}
+*/

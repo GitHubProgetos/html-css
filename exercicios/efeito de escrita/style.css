@@ -16,14 +16,20 @@
 }
 
 .s-hero h1 {
+    
     font-size: 60px;
     
 }
 
 .s-hero h1 span {
     color: #ea0046;
+    overflow: hidden;
 }
 
 .js {
     color: #ea0046;
 }
+
+
+
+
