@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Flexible Box 3</title>
+    <style>
+        .container{
+            display: flex;/*<=Configuração padrão*/
+            /*
+            flex-direction: row;
+            flex-wrap: nowrap;/*<=Configuração padrão*/
+            
+            flex-flow: row wrap-reverse;/*<=Shorthand | Comandos wrap | nowrap |wrap-reverse |Comandos row = row-reverse*/
+            background-color: rgb(156, 152, 152);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        .item{
+          background-color: rgb(214, 211, 211);
+          border: 1px solid black;
+          flex: auto;/*Defina a proporção automática e que não aja espaço vasio no container pai*/
+          text-align: center;
+          padding: 10px;
+          margin: 2px 2px 2px 2px;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item">Exemplo de ploco 1</div>
+        <div class="item">Exemplo de ploco 2</div>
+        <div class="item">Exemplo de ploco 3</div>
+        <div class="item">Exemplo de ploco 4</div>
+        <div class="item">Exemplo de ploco 5</div>
+        <div class="item">Exemplo de ploco 6</div>
+        <div class="item">Exemplo de ploco 7</div>
+
+    </div>
+</body>
+</html>
