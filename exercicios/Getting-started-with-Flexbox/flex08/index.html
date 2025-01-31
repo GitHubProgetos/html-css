@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Flexible Box 8</title>
+    <style>
+        /*Essas propriedades serão aplicadas aos itens*/
+        /*order: 0; Define a ordem dos itens*/
+        /*align-self: auto; Define a alinhamento dos itens no eixo secundario cross axis| valores: flex-start | flex-end | center | stretch*/
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: rgb(126, 122, 122);
+            padding: 10px;
+            height: 400px;
+            align-items: flex-start;
+          
+        }
+        .item{
+          background-color: rgb(214, 211, 211);
+          border: 1px solid black;
+          /*flex: auto;/*Define a proporção automática dos itens essa propriedade é aplicada só aos itens*/
+          text-align: center;
+          padding: 20px;
+          margin: 0px 2px 0px 2px;
+          cursor: pointer;
+        }
+
+        div#i1{
+            align-self: auto;
+        }
+        div#i2{
+            align-self: flex-start;
+        }
+        div#i3{
+            align-self: center;
+        }
+        div#i4{
+            align-self: flex-end;
+        }
+        div#i5{
+            align-self: stretch;
+        }
+        div#i6{
+            align-self: flex-end;
+        }
+        div#i7{
+            align-self: stretch;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item" id="i1">1</div>
+        <div class="item" id="i2">2</div>
+        <div class="item" id="i3">3</div>
+        <div class="item" id="i4">4</div>
+        <div class="item" id="i5">5</div>
+        <div class="item" id="i6">6</div>
+        <div class="item" id="i7">7</div>
+
+    </div>
+</body>
+</html>

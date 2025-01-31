@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="html.ico" type="image/x-icon">
-    <title>Flexible Box 6</title>
+    <title>Flexible Box 9 flex-basis</title>
     <style>
-        /*align-content: space-between; se aplicar na div pai*/
+        /*flex-basis: 150px; se aplicar na div filho.
+
+        Se aplicar flex-basis 200px para todos ele 
+        vai ter 200px enquanto der se não hover espaço
+        suficiente eles vão diminuir igual para todos.
+        flex-basis é uma medida certa se couber se não
+        ele vai se adaptar.Flex-basis = width
+        
+        */
         .container{
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
             background-color: rgb(126, 122, 122);
             padding: 10px;
-            height: 400px;
-            align-content: space-between;
+          
         }
         .item{
           background-color: rgb(214, 211, 211);
           border: 1px solid black;
-          /*flex: auto;/*Defina a proporção automática*/
           text-align: center;
-          padding: 40px;
+          padding: 10px;
           margin: 2px 2px 2px 2px;
           cursor: pointer;
+          /*flex-basis: auto;*/
+          flex-basis: 150px;
         }
         
     </style>
@@ -31,16 +39,12 @@
     <div class="container">
 
         <div class="item">1</div>
-        <div class="item">2</div>
+        <div class="item">Outro conteúdo</div>
         <div class="item">3</div>
-        <div class="item">4</div>
+        <div class="item">Conteúdo um pouco maior</div>
         <div class="item">5</div>
-        <div class="item">6</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
-        <div class="item">10</div>
-        <div class="item">11</div>
-        <div class="item">12</div>
+        <div class="item">Conteúdo maior ainda que vai ocupar mais espaço</div>
+        <div class="item">7</div>
 
     </div>
 </body>

@@ -6,6 +6,15 @@
     <link rel="shortcut icon" href="html.ico" type="image/x-icon">
     <title>Flexible Box Cetralized</title>
     <style>
+        /*
+        Essas propriedades servem para alinhar os intens dentro do container a div pai
+        
+        Justify Content = Vai alinhar os intens dentro do eixo principal main axis
+
+        Align Items = Vai alinhar os intens dentro do eixo secundario cross axis
+
+        Align Content = Vai alinhar os intens dentro do eixo transversal mas quando estão empacotados
+        */
         *{
             margin: 0px;
             padding: 0px;
@@ -28,12 +37,14 @@
        }
        section{
            /*background-color: #29292e;*/
-           background-color: #323238;
+           background-color: #323238cb;
            height: 200px;
            width: 200px;
            text-align: center;
            border-radius: 10px;
-           border: 1px solid #3f3f3f;
+          /* border: 1px solid #3f3f3f;*/
+          /* border: 1px solid #7c7c8A;*/
+           border: 1px solid rgba(255, 255, 255, .2);
            cursor: pointer;
         }
         h1{
