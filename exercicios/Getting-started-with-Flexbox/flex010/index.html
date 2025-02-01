@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Flexible Box 10 | shrink grow</title>
+    <style>
+        /*
+        Shrink -> encolher
+        Grow -> aumentar crecer
+
+        Cofiguração padrão:
+        flex-shrink: 1;
+        flex-grow: 0;
+
+        Fica muito mais eficiente usar flex-flow: row wrap; e flex-shrink: 1; flex-grow: 1;
+        */
+        .container{
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: rgb(126, 122, 122);
+            padding: 10px;
+          
+        }
+        .item{
+          background-color: rgb(214, 211, 211);
+          border: 1px solid black;
+          /*flex: auto;/*Defina a proporção automática*/
+          text-align: center;
+          padding: 10px;
+          margin: 2px 2px 2px 2px;
+          cursor: pointer;
+          flex-basis: 250px;
+          flex-shrink: 1;
+          flex-grow: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item">1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officia culpa natus repudiandae consectetur quod ut minima voluptas ab voluptates neque distinctio animi sit ratione et, iure consequuntur reiciendis? Nulla!</div>
+        <div class="item">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque atque quidem earum facere aliquam id rerum tempore omnis. Eum obcaecati, ullam quod neque tempora eaque fuga. Sapiente, animi incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et labore perspiciatis eaque consectetur nesciunt nostrum rem magni ab cum laboriosam, enim ex consequatur voluptatem ea exercitationem saepe, dicta aliquid laborum.</div>
+        <div class="item">3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ex odit alias consequuntur nobis, fugiat esse fugit dolor excepturi, officiis facere explicabo repellat possimus a ad nesciunt earum tenetur nulla. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis a debitis ipsum omnis dignissimos provident veritatis delectus repellat. Harum, omnis accusantium maxime eveniet quidem est officia consequuntur similique autem nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos natus, odio aliquam aspernatur eos maxime repellendus. Recusandae rerum placeat quibusdam delectus architecto voluptate unde, distinctio quae omnis velit, dolores maxime?</div>
+
+    </div>
+</body>
+</html>
