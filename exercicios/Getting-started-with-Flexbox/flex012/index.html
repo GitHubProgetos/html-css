@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="html.ico" type="image/x-icon">
-    <title>Flexible Box 11 | shrink grow</title>
+    <title>Flexible Box 12 | grow shrink basis</title>
     <style>
         /*
         Shrink -> encolher
@@ -15,6 +15,9 @@
         flex-grow: 0;
 
         Fica muito mais eficiente usar flex-flow: row wrap; e flex-shrink: 1; flex-grow: 1;
+
+        Ordem do shorthand: flex = flex-grow + flex-shrink + flex-basis
+        
         */
         .container{
             display: flex;
@@ -31,21 +34,40 @@
           padding: 10px;
           margin: 2px 2px 2px 2px;
           cursor: pointer;
-          flex-basis: 200px;
+          
          
         }
+            /* flex : flex-grow + flex-shrink + flex-basis ; */
 
+            /*Por default  flex-grow: 0; flex-shrink: 1; flex-basis: auto;*/
+
+            /*flex: 0 1 auto; ou flex: initial;*/
+
+            /*flex: 0 0 auto; Deixa os elementos não flexiveis e o tamanho automatico ou flex: none;*/
+
+            /*flex: 1 1 auto; ou flex: auto; Maxímo de flexibilidade que a div pode ter*/
+
+            /*flex: 3; -> É o mesmo que flex: 3 1 auto; shrink e basis por default */
         #cxa{
-            flex-shrink: 1; /*<- encolher*/
-            flex-grow: 0;   /*<- crecer*/
+            /*flex-grow: 1;   /*<- crecer*/
+            /*flex-shrink: 0; /*<- encolher*/
+            /*flex-basis: 200px;*/
+            
+            flex: 1 0 200px;
         }
         #cxb{
-            flex-shrink: 0; /*<- encolher*/
-            flex-grow: 2;   /*<- crecer*/
+            /*flex-grow: 1;   /*<- crecer*/
+            /*flex-shrink: 1; /*<- encolher*/
+            /*flex-basis: 150px;*/
+
+            flex: 1 1 150px;
         }
         #cxc{
-            flex-shrink: 1; /*<- encolher*/
-            flex-grow: 2;   /*<- crecer*/
+            /*flex-grow: 1;   /*<- crecer*/
+            /*flex-shrink: 8; /*<- encolher*/
+            /*flex-basis: auto;*/
+
+            flex: 1 8 auto;
         }
         
     </style>

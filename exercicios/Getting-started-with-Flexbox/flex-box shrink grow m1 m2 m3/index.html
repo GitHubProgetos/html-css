@@ -16,12 +16,16 @@
 
         Fica muito mais eficiente usar flex-flow: row wrap; e flex-shrink: 1; flex-grow: 1;
         */
+        body{
+            background-color: rgb(27, 27, 228);
+        }
         .container{
             display: flex;
             flex-flow: row nowrap;
-            background-color: rgb(126, 122, 122);
-            padding: 10px;
-          
+            background-color: whitesmoke;
+            padding: 19px;
+            border-radius: 10px;
+            margin-top: 200px;
         }
         .item{
           background-color: yellow;
@@ -33,23 +37,28 @@
           margin: 2px 2px 2px 2px;
           border-radius: 10px;
           cursor: pointer;
-         
         }
 
         #cxa{
             flex-shrink: 1; /*<- encolher*/
             flex-grow: 0;   /*<- crecer*/
-            flex-basis: 150px;
+            flex-basis: 200px;
         }
         #cxb{
             flex-shrink: 0; /*<- encolher*/
             flex-grow: 2;   /*<- crecer*/
-            flex-basis: 150px;
+            flex-basis: 200px;
         }
         #cxc{
             flex-shrink: 2; /*<- encolher*/
             flex-grow: 1;   /*<- crecer*/
-            flex-basis: 150px;
+            flex-basis: 200px;
+        }
+
+        h1{
+            /*margin-top: 50px;*/
+            text-align: center;
+            margin-top: 50px;
         }
         
     </style>
@@ -57,9 +66,9 @@
 <body>
     <div class="container">
 
-        <div class="item" id="cxa">1</div>
-        <div class="item" id="cxb">2</div>
-        <div class="item" id="cxc">3</div>
+        <div class="item" id="cxa"><h1>1</h1></div>
+        <div class="item" id="cxb"><h1>2</h1></div>
+        <div class="item" id="cxc"><h1>3</h1></div>
 
     </div>
 </body>
