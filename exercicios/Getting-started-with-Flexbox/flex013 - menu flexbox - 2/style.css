@@ -39,8 +39,9 @@ header nav a{
     padding: 10px;
     border-radius: 20px 5px 20px 5px;
     /*border-radius: 2px 15px 2px 15px;*/
-    border: 1px solid rgba(255, 255, 255, .2);
-    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    /*border: 1px solid rgba(255, 255, 255, .2);*/
+    /*box-shadow: 0 0 10px rgba(255, 255, 255, .2);*/
+    background-color: #323238;
     margin: 5px;
     transition: all 0.5s ease-in-out;
     z-index: 1;

@@ -68,7 +68,7 @@ p{
     transform: translate(-50%, -50%);
     color: #ffffff;
     font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 2px;
+    font-weight: 100;
+    letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
 }
