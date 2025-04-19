@@ -1,0 +1,214 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Researcher', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #27282a;
+}
+
+@font-face {
+    font-family: 'Researcher';
+    src: url('researcher-researcher-bold-700.otf') format('opentype'), url('') format('truetype');
+    font-weight: 10;
+    font-style: normal;
+}
+/*
+.btn {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.btn:hover {
+    background: #2196f3;
+    color: #fff;
+    box-shadow: 0 0 10px #2196f3,
+                0 0 40px #2196f3,
+                0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.btn span {
+    position: absolute;
+    display: block;
+}
+
+.btn span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;    
+    background: linear-gradient(180deg, transparent, #2196f3);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.btn span:nth-child(3) {
+    bottom: 0;
+    right: 0;    
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;    
+    width: 2px;
+    height: 100%;    
+    background: linear-gradient(360deg, transparent, #2196f3);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;    
+    }
+    50%, 100% {
+        bottom: 100%;
+    }
+}
+*/
+
+.btn {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    /*border-radius: 26px 7px;*/
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 0.1px solid rgba(255, 255, 255, 0.192);
+    /*
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
+    */
+   
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    /*
+    border-top: 0.5px solid rgba(255, 255, 255, 0.35);
+    border-left: 0.5px solid rgba(255, 255, 255, 0.35);
+    */
+    overflow: hidden;
+    padding-left: 40px;
+    transition: 0.5s;
+    font-size: 15px;
+    /*
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 0.5s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    */
+}
+
+.btn:hover {
+    padding-left: 0px;
+    padding-right: 40px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn span {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   /*background: rgba(255, 255, 255, 0.1);*/
+   background: transparent;
+   left: 5px;
+   transition: 0.5s ease-in-out;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 30px;
+}
+
+.btn:hover span {
+    left: calc(100% - 55px);
+    transition: 0.5s ease-in-out;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transform: translateX(-174px) skewX(30deg);
+    transition: 0.5s ease-in-out;
+}
+
+.btn:hover:after {
+    transform: translateX(174px) skewX(30deg);
+}
+
+

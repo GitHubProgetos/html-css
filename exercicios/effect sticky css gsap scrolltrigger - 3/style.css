@@ -1,0 +1,64 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.s-others {
+    width: 100%;
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+.s-hero {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #171d26;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 200px;
+    
+    padding: 100px 0;
+    
+
+}
+
+.area {
+    
+    position: sticky;/* VAI TRAVAR NA HORA QUE A SEÇÃO CHEGAR NO TOPO */
+    top: 100px;
+    width: 80%;
+    height: 800px;
+    border-radius: 10px;
+
+
+}
+
+.area:nth-child(1) {
+    background-color:  blueviolet;
+
+
+    
+
+  }
+
+.area:nth-child(2) {
+    background-color:  #690b66;
+
+
+    
+
+  }
+
+.area:nth-child(3) {
+    background-color:  #682266;
+    
+
+  }
+
+
+
+
+

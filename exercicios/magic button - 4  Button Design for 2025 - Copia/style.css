@@ -1,0 +1,83 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+}
+
+.btn {
+    position: relative;
+    /*padding: 14px 36px;*/
+    padding: 25px 52px;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background-color: #1c2526;
+    color: #fff;
+    border: none;/*DEPOIS TIRAR*/
+    border-radius: 12PX;/*DEPOIS TIRAR*/
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+/*before é uma pseudo classe que cria um elemento antes do btn before => antes*/
+.btn::before { 
+    content: '';
+    position: absolute;
+    inset: -2px;/* 2px para cima e para baixo*/
+    background: linear-gradient(45deg, #ff2e63, #00ddeb);
+    border-radius: 14px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+/*after é uma pseudo classe que cria um elemento depois do btn after => depois*/
+.btn::after {
+    content: ''; 
+    position: absolute;
+    inset: 2px;/* 2px para cima e para baixo*/
+    background-color: #1c2526;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    color: #00ddeb;
+}
+
+.btn:hover::before {
+    background: linear-gradient(45deg, #00ddeb, #ff2e63);
+    filter: blur(1px);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.shine {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(12deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.btn:hover .shine {
+  transform: translateX(100%);
+}

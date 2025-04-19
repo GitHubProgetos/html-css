@@ -7,10 +7,10 @@
 gsap.to(".quadrado", {
     x: 300,
     duration: 3,
-    ease: "elastic.out(1, 0.3)"
-    //backgroundColor: "rgba(255, 255, 255, .2)",
-    //borderRadius: "50%"
-    //opacity: 0
+    ease: "elastic.out(1, 0.3)",
+    backgroundColor: "rgba(255, 255, 255, .2)",
+    borderRadius: "50%",
+    opacity: 0
 })
 */
 
@@ -36,3 +36,4 @@ gsap.fromTo(".quadrado", {
     duration: 3,
     //ease: "elastic.out(1, 0.3)"
 })
+
