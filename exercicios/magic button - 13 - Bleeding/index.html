@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/html.ico" type="image/x-icon">
+    <title>Button Bleeding</title>
+</head>
+<body>
+    
+    <a href="#" class="btn"><div class="box" id="box"></div><span>Bleeding</span></a>
+
+    <svg>
+        <filter id="gooey">
+           <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+           <feColorMatrix values="1 0 0 0 0  
+           0 1 0 0 0  
+           0 0 1 0 0  
+           0 0 0 50 -10" />
+        </filter>
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+</html>

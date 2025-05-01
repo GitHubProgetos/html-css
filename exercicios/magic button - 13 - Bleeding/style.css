@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1e1e1e;
+}
+
+a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f00;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    /*background: #111;*/
+    background: #1e1e1e;
+    padding: 15px 25px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+/*
+a:hover span {
+    transform: scale(1.1);
+    background: #f00;
+    color: #fff;
+    box-shadow: 0 0 10px #f00,
+                0 0 30px #f00,
+                0 0 60px #f00,
+                0 0 100px #f00;
+}
+*/
+
+a:hover span {
+  color: #fff;
+  background: transparent;
+  letter-spacing: 0.3em;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  filter: url(#gooey);
+}
+
+.particle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #f00;
+  border-radius: 50%;
+  animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(0,0) scale(1);
+  }
+  100% {
+   transform: translate(var(--dx), var(--dy)) scale(0.5);
+  }
+}
+
+svg {
+  display: none;
+}

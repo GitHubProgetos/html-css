@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Researcher';*/
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+@font-face {
+    font-family: 'Researcher';
+    src: url('researcher-researcher-bold-700.otf') format('opentype'), url('') format('truetype');
+    font-weight: 50;
+    font-style: initial;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+
+}
+
+.btn {
+    position: relative;
+    width: 550px;
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    border-radius: 12px;/*DEPOIS TIRAR*/
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:before { 
+    content: '';
+    position: absolute;
+    inset: -2px;/* 2px para cima e para baixo*/
+    background: linear-gradient(166deg, #3b82f6 35%, #10b981 , #facc15, #f97316);
+    border-radius: 14px;
+    z-index: -1;
+    
+}
+
+.btn:after {
+    content: ''; 
+    position: absolute;
+    inset: 2px;/* 2px para cima e para baixo*/
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 45px;
+    border-radius: 12px;
+    background-color: #f0f0f0;
+    font-size: 18px;
+    margin-left: 455px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: none;
+    font-weight: 500;
+    color: #1e1e1e;
+    transition: all 0.5s ease;
+    /*text-transform: uppercase;*/
+}
+/*
+.btn:hover::before {
+    background: linear-gradient(166deg, #ff2e63 35%, #00ddeb, #f0f0f0, #c0b3b3);
+    filter: blur(1px);
+}
+*/
+.btn:hover:before {
+    background: linear-gradient(166deg, #f97316 35%, #facc15, #10b981,#3b82f6);
+    filter: blur(1px);
+    animation: gradientBorder 1.5s linear infinite alternate;
+    box-shadow: 5px 5px 5px #f97316, 10px 10px 10px #facc15, 15px 15px 15px #10b981, 20px 20px 20px #3b82f6;        
+}
+
+@keyframes gradientBorder {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+    
+
+
+
+
+
+
+/*
+.btn:active {
+    transform: scale(0.95);
+}
+*/
+
+.circle:active {
+    transform: scale(0.80);
+}

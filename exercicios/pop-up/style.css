@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d8cdcd86;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#modal {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 20px;
+    text-align: center;
+    top: 50%; /* Posiciona o modal box 50% da altura da página */
+    left: 50%; /* Posiciona o modal box 50% da largura da página */
+    transform: translate(-50%, -50%); /* Centraliza o modal box */
+    z-index: 1;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 20px 50px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.288);
+    font-weight: 400;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #d8cdcd3a;
+}
+
+.btn {
+    margin-top: 27px;
+    cursor: pointer;
+    border: none;
+    padding: 20px 50px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(2, 2, 2, 0.541);
+    font-weight: 400;
+}
+
+h2 {
+    letter-spacing: 2px;
+}
+
+p {
+    margin-top: 15px;
+    letter-spacing: 2px;
+}

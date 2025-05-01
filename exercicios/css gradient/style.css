@@ -26,6 +26,8 @@ body{
     font-family: 'Bebas Neue', cursive;
     display: grid;
     place-content: center;
+    min-height: 100vh;
+   
 }
 
 h1{
@@ -41,4 +43,5 @@ h1{
 section{
     border-bottom: 4px solid white;
     border-image: var(--gradient) 1;
+
 }
