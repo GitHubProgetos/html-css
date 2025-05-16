@@ -37,6 +37,7 @@ h1{
     -webkit-background-clip: text;
     color: transparent;
     padding: 1rem;
+    font-weight: bold;
     
 }
 

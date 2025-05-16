@@ -71,7 +71,7 @@ body {
     z-index: 1;
     background: rgba(255, 255, 255, 0.25); 
     transform: translateX(-170px) skewX(30deg);
-   transition: 0.75s ease-in-out;
+    transition: 0.75s ease-in-out;
 }
 
 .btn:hover:after {

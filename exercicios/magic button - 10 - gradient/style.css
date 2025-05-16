@@ -24,12 +24,16 @@ body {
 }
 
 button {
+    
     background-image: linear-gradient(
         to right,
         var(--color-one),
         var(--color-two),
         var(--color-three)
     );
+    
+
+   
     /*background-size: 100%;*/
     background-size: 200%;
     position: relative;

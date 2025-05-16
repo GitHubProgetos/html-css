@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1df6;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-family: sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+    background: linear-gradient(to right, #00ade1, #ff6493, #ffdd1c, #00dc82,#dc00d4);
+    color: transparent;
+    
+    background-size: 400% 400%;
+    background-clip: text;
+    animation: gradient 5s ease infinite;
+    text-overflow: clip;
+}
+
+.text2 {
+    font-family: sans-serif;
+    font-size: 85px;
+    font-weight: 800;
+    color: #bbb4b4;
+}
+
+.text span {
+    color: #bbb4b4;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
+
+
+/*
+    #ffffff
+    #cccccc
+    #b3b3b3
+    #666666
+    #333333 
+    rgb(149 114 252)
+    rgb(67 231 173)
+    rgb(226 212 92)
+*/
+
+/*
+CSS @keyframes Definitions
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradient-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes shine {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+*/
+
+/*
+Gradiente linear com cores vibrantes do pôr do sol
+
+background: linear-gradient(to right, #f6ad55, #ed64a6, #805ad5);
+background-size: 200% 200%;
+animation: gradient-flow 5s ease infinite;
+
+
+Calming blue to teal gradient with pulse effect
+Gradiente calmante de azul a azul-petróleo com efeito de pulso
+
+background: linear-gradient(to bottom right, #63b3ed, #38b2ac);
+animation: pulse-glow 2s ease-in-out infinite;
+
+
+Energetic gradient with electric greens and yellows
+Gradiente energético com verdes e amarelos elétricos
+
+background: linear-gradient(to right, #84cc16, #facc15, #84cc16);
+background-size: 200% 100%;
+animation: gradient-shift 3s linear infinite alternate;
+
+
+Rich purple to magenta gradient with rotation
+
+background: linear-gradient(to top right, #7e22ce, #a855f7, #581c87);
+animation: gradient-rotate 8s linear infinite;
+
+
+Vibrant cyan to pink with shimmering effect
+
+background: linear-gradient(to right, #22d3ee, #3b82f6, #ec4899);
+background-size: 400% 100%;
+animation: shine 4s linear infinite;
+
+
+Warm gradient inspired by tropical sunsets
+
+background: linear-gradient(to bottom right, #facc15, #f97316, #ef4444);
+animation: pulse-glow 2s ease-in-out infinite;
+
+
+Vibrant berry colors with flowing animation
+
+background: linear-gradient(to right, #d946ef, #dc2626, #f97316);
+background-size: 200% 200%;
+animation: gradient-flow 5s ease infinite;
+
+
+Soothing green gradient with subtle movement
+
+background: linear-gradient(to bottom right, #22c55e, #10b981, #14b8a6);
+background-size: 200% 100%;
+animation: gradient-shift 3s linear infinite alternate;
+
+
+Space-inspired gradient with rotating effect
+
+background: linear-gradient(to right, #4338ca, #7c3aed, #6d28d9);
+animation: gradient-rotate 8s linear infinite;
+*/
+
+
+  
+

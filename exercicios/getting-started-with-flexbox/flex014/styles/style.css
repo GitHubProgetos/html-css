@@ -1,0 +1,152 @@
+
+@charset "UTF-8";
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+header {
+    
+    background-image: linear-gradient(
+        45deg,
+        #1e1e1e,
+        #ffffff 500%
+    );
+    
+    /*background-color: #1e1e1e;*/
+    color: #ffffff;
+    padding: 20px;
+}
+
+.normal{
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #dbdbdb;
+    color: #1e1e1e;
+    padding: 20px;
+}
+
+p, h1, h2{
+    margin-bottom: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    /*text-indent: 10px;*/
+}
+
+p{
+    letter-spacing: 1px;
+}
+
+h1{
+    margin-top: 10px;
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    
+}
+
+.space{
+    margin-top: 10px;
+    background-image: var(--gradient) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+h2, h1 {
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+
+   
+.line {
+    border-top: 1px solid rgb(139, 136, 131);
+    padding-top: 10px;
+    border-image: var(--gradient) 1;
+}
+
+:root{
+    --gradient: linear-gradient(
+        to right,
+        rgb(149 114 252)1%,
+        rgb(67 231 173),
+        rgb(226 212 92) 27%
+        )
+}
+
+iframe {
+   border-radius: 15px;
+}
+/* 
+section > article {
+    border: 2px solid #1e1e1e;
+  
+}
+*/
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+   /* margin-top: 30px;*/
+}
+
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+   /* margin-top: 30px;*/
+}
+
+article > div.text {
+    flex: 1 1 500px;
+    
+}
+
+article > div.media {
+    flex: 1 0 500px;
+
+}
+
+div.media img {
+    display: block;
+    margin: auto;
+    margin-top: -22px;
+}
+
+div.media iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+.space1 {
+  margin-top: 30px;
+}
+
+.space2 {
+  margin-top: 30px;
+}
+    
+  
+
+

@@ -1,0 +1,322 @@
+@charset " UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: 'Bebas Neue', cursive;*/
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background: var(--background3);
+}
+
+h1 {
+    font-size: 4em;
+    background-image: var(--gradient20);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+
+
+:root{
+    --background: linear-gradient(
+        to right,
+        #f0f0f0
+);
+}
+
+:root{
+    --background1: linear-gradient(
+        to right,
+        #1e1e1e
+);
+}
+
+:root{
+    --background2: linear-gradient(
+        to right,
+        #131313
+);
+}
+
+:root{
+    --background3: linear-gradient(
+        to right,
+        #1b1b1df6
+);
+}
+
+:root{
+    --background4: linear-gradient(
+     48deg,   
+    teal,  
+    purple,
+    yellow,
+    cyan
+
+);
+}
+
+:root{
+    --background5: linear-gradient(
+        to right,
+        #f0f0f0, 10%,
+        #1e1e1e 80%,
+        #f0f0f0,10%
+);
+}
+
+
+
+:root{
+    --background7: radial-gradient(
+        circle,
+        #f0f0f0 -555%,
+        #1e1e1e
+        
+)
+}
+
+
+:root{
+    --gradient: linear-gradient(
+        to right,
+        #6157ff 60%,
+        #ee49fd 
+);
+}
+
+:root{
+    --gradient1: linear-gradient(
+        to right,
+        #ff4066,70%,
+        #fff16a
+);
+}
+
+:root{
+    --gradient2: linear-gradient(
+        to right,
+        #64e9ff,70%,
+        #ee49fd
+);
+}
+
+:root{
+    --gradient3: linear-gradient(
+        to right,
+        #64e9ff,60%,
+        #6a34ca
+);
+}
+
+:root{
+    --gradient4: linear-gradient(
+        to right,
+        rgb(149 114 252),
+        rgb(67 231 173),
+        rgb(226 212 92)
+);
+}
+
+:root{
+    --gradient5: linear-gradient(
+        4deg,
+        #f0f0f0,
+        #1e1e1e 99%
+);
+}
+
+:root{
+    --gradient6: linear-gradient(
+        50deg,
+        #1e1e1e,15%,
+        #f0f0f0,
+        #1e1e1e 
+);
+}
+
+:root{
+    --gradient7: linear-gradient(
+        50deg,
+        #1e1e1e,15%,
+        #fba94c,
+        #1e1e1e 
+);
+}
+
+:root{
+    --gradient8: linear-gradient(
+        50deg,
+        #1e1e1e,15%,
+        #00d9ff,
+        #1e1e1e 
+);
+}
+
+:root{
+    --gradient9: linear-gradient(
+        50deg,
+        #1e1e1e,15%,
+        #00ff96,
+        #1e1e1e 
+);
+}
+
+:root{
+    --gradient10: linear-gradient(
+        50deg,
+        #1e1e1e,15%,
+        #ff0032,
+        #1e1e1e 
+);
+}
+
+:root{
+    --gradient11: linear-gradient(
+        50deg,
+        #1e1e1e,15%,
+        #ea0046,
+        #1e1e1e 
+);
+}
+
+:root{
+    --gradient12: linear-gradient(
+        50deg,
+        #1e1e1e,15%,
+        #01fe87,
+        #1e1e1e 
+);
+}
+
+:root{
+    --gradient13: linear-gradient(
+        50deg,
+        #1e1e1e,15%,
+        #c4c4cc,
+        #1e1e1e 
+);
+}
+
+:root{
+    --gradient14: linear-gradient(
+        50deg,
+        #1e1e1e,15%,
+        #ffdd1c,
+        #1e1e1e 
+);
+}
+
+:root{
+    --gradient15: linear-gradient(
+        50deg,
+        #1e1e1e,15%,
+        #00dc82,
+        #1e1e1e 
+);
+}
+
+:root{
+    --gradient16: linear-gradient(
+        50deg,
+        #1e1e1e,15%,
+        #ff6493,
+        #1e1e1e 
+);
+}
+
+:root{
+    --gradient17: linear-gradient(
+        50deg,
+        #1e1e1e,15%,
+        #00ade1,
+        #1e1e1e 
+);
+}
+
+:root{
+    --gradient18: linear-gradient(
+        50deg,
+        #1e1e1e,15%,
+        #dc00d4,
+        #1e1e1e 
+);
+}
+
+:root{
+    --gradient19: linear-gradient(
+        50deg,
+        #1e1e1e,18%,
+        #ffffff,
+        #cccccc,
+        #999999,
+        #666666,
+        #333333 
+);
+}
+
+:root{
+    --gradient20: linear-gradient(
+        60deg,
+        #84ff3d,
+        #2eabff 
+);
+}
+
+
+ /*radial-gradient(50% 50% at 50% 0, hsla(0, 0%, 100%, .8) 0, transparent 100%), */
+/*color: #fba94c;*/
+/*color: #dc00d4;*/
+/*color: #ffdd1c;*/
+/*color: #00dc82;*/
+/*color: #ff6493;*/
+/*color: #00ade1;*/
+/*color: #fba94c;*/
+/*color: #ccfd03;*/
+/*color: #00ff96;*/
+/*color: #ff0032;*/
+/*color: #ea0046;*/
+/*color: #00d9ff;*/
+/*color: #01fe87;*/
+/*color: #c4c4cc;*/
+
+/*
+    #ffffff
+    #cccccc
+    #b3b3b3
+    #666666
+    #333333
+    #999999
+    #1e1e1e
+    #000000 
+    rgb(149 114 252)
+    rgb(67 231 173)
+    rgb(226 212 92)
+     #040506;
+     #171D26;
+     #1F2733;
+     #263140;
+     #2E3B4D;
+     #424E60;
+     #6D7A8C;
+     #8A95A6;
+     #AAB3C0;
+     #C7CFD9;
+     #DADFE6;
+     #FFFFFF;
+     #653DF5;
+     #8161F4;
+     #9D85F3;
+     #B7A7F1;
+     #D3CBF0;
+     #E1DDF0;
+     #1b1b1df6
+*/
