@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    background-image: url(../assets/bg.jpg);
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    animation: animateBackground 4s linear infinite;
+}
+/*
+@keyframes animateBackground {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+*/
+
+@keyframes animateBackground {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+
+
+section .text {
+    position: relative;
+    color: #fff;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+section .text span {
+    position: relative;
+    display: inline-block; 
+    animation: animate 3s ease-in-out infinite;
+}
+
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(70px);
+    }
+    50% {
+        transform: translateY(-70px);
+    }
+    100% {
+        transform: translateY(70px);
+    }
+}
+  
+
+
+

@@ -39,11 +39,11 @@ body {
     z-index: 1;
     overflow: hidden;
 }
-
+/*
 .btn:active {
     transform: scale(0.95);
 }
-
+*/
 .shine {
     position: absolute;
     top: -50%;
