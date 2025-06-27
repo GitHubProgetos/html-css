@@ -28,7 +28,7 @@ body {
     border-radius: 20px;
     background:
     linear-gradient( #1e1e1e) content-box, /* ou padding-box | pega na div*/
-    linear-gradient(45deg, #ff0000, #0000ff) border-box;/*pega na div e na borda*/
+    linear-gradient(45deg,#3b82f6 ,#10b981,#facc15,#f97316) border-box;/*pega na div e na borda*/
     border: 2px solid transparent;
     cursor: pointer;
 }

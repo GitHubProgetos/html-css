@@ -17,6 +17,7 @@ header{
     padding: 20px;
     background-color: #1e1e1e;
     border-bottom: 1px solid rgba(255, 255, 255, .2);
+    
 }
 
 header h1{
@@ -43,8 +44,13 @@ header nav a{
     /*box-shadow: 0 0 10px rgba(255, 255, 255, .2);*/
     background-color: #323238;
     margin: 5px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     z-index: 1;
+}
+
+a:hover{
+    border: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .4);
 }
 
 nav:hover > :not(:hover){

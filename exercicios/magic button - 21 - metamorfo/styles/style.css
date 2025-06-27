@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #1f1f1f;
+}
+
+.button-settings {
+    color: #c7f040;
+    text-decoration: none;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: 1px solid #c7f040;
+    padding: 20px 45px;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-settings:hover {
+    border-radius: 10px;
+}
+

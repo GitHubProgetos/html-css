@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Researcher', sans-serif;
+
+}
+
+@font-face {
+    font-family: 'Researcher';
+    src: url('researcher-researcher-bold-700.otf') format('opentype'), url('') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+:root {
+   --color-one:#f7ba2b;
+   --color-two: #ea5358;
+
+   --color-three:#181818;
+   --color-background:#212121;
+
+   --color-four:#111111;
+   --color-five:#1e1e1e;
+
+   --color-six:#b100ff;
+   --color-seven:#ac6bff;
+   --color-eight:#ffa4fc;
+
+   --color-nine:#01b66a;
+   --color-ten:#03624c;
+   --color-eleven:#40e56f;
+
+   --color-twelve:#9a0000;
+   --color-thirteen:#ff0000;
+   --color-fourteen:#ff8383;
+
+   --color-fifteen:#1d4cff;
+   --color-sixteen:#2ba3ec;
+   --color-seventeen:#aaf1ff;
+
+   --color-dezenove:#ccfd03;
+}
+
+body {
+    background-color: var(--color-background);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.btn-yellow {
+    background-image: linear-gradient(
+        to right, 
+        var(--color-one),
+        var(--color-one),
+        var(--color-two)
+        
+        
+        
+    );
+    display: grid;
+    place-items: center;
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-size: 100%;
+    transition: all .5s ease-in-out;
+    color: var(--color-three);
+}
+
+.btn-yellow:hover {
+    background-position: left top;
+    background-size: 200%;
+}
+
+
+

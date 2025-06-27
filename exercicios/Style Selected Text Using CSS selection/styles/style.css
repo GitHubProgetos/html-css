@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    width: 210vw;
+    height: 210vh;
+    cursor: url('../styles/vire-para-cima.png'), auto;
+}
+
+
+    
+
+div.paragraph-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*Ou*/
+    /*
+    display: grid;
+    place-items: center;
+    */
+    /*Ou*/
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center
+    */
+}
+
+div h2 {
+    font-size: 23px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+div p {
+    font-size: 1rem;
+    /*text-align: center;*/
+    letter-spacing: 2px;
+    word-spacing: 0px;/*espace entre as palavras*/
+    line-height: 23px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: justify;/* Alinhar o texto*/
+    
+    
+    
+    /*text-transform: capitalize;/* Primeira letra maiuscula*/
+    /*text-transform: lowercase;/* Primeira letra minuscula*/
+    /*text-transform: uppercase;/* todas as letras maiusculas*/
+    /*text-decoration: underline;/* sublinhar*/
+    
+}
+
+h2::selection {
+    background-color: #e8492a;
+    color: #1e1e1e;
+}
+
+div p::selection {
+    background-color: #e8492a;
+    color: #1e1e1e;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e8492a; 
+  border-radius: 50px;
+  /*border: 1px solid white;*/
+}
+

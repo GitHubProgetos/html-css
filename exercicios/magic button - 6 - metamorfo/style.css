@@ -50,6 +50,10 @@ body {
     z-index: 0;
  }
 
+.btn:hover {
+    border-radius: 7px 26px;
+}
+
 .btn:hover .shine {
     transform: translateX(100%);
 }
