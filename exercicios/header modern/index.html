@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/html.ico" type="image/x-icon">
+    <title>HEADER MODERN</title>
+</head>
+<body>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <span class="hover-line"></span>
+    </nav>
+
+  <script>
+  const menu = document.querySelector('.menu');
+  const hoverLine = document.querySelector('.hover-line');
+  const items = document.querySelectorAll('.menu ul li a');
+
+  items.forEach(item => {
+    item.addEventListener('mouseenter', (e) => {
+      const coords = item.getBoundingClientRect();
+      const menuCoords = menu.getBoundingClientRect();
+      hoverLine.style.width = `${coords.width}px`;
+      hoverLine.style.left = `${coords.left - menuCoords.left}px`;
+    });
+
+    item.addEventListener('mouseleave', () => {
+      hoverLine.style.width = `0`;
+    });
+  });
+</script>
+
+    
+</body>
+</html>

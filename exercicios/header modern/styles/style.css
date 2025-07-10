@@ -1,0 +1,48 @@
+
+body {
+  background: #111;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 50px;
+}
+
+.menu {
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 0;
+  display: inline-block;
+  position: relative;
+  font-weight: normal;
+}
+
+.hover-line {
+  position: absolute;
+  bottom: 7px;
+  height: 1px;
+  /*background: #00ffcc;*/
+  background: #fff;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  width: 0;
+  left: 0;
+}
+

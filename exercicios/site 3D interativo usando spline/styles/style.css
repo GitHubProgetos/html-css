@@ -67,7 +67,7 @@ nav h1{
     align-items: start;
     flex-direction: column;
     gap: 1rem;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
 
 .main .left h1 {
@@ -190,6 +190,6 @@ nav h1{
     /*
     filter: blur(100px);
     z-index: 1;
-*/
+    */
 }
 

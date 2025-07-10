@@ -16,7 +16,7 @@ body {
 
 h1 {
     font-size: 4em;
-    background-image: var(--gradient20);
+    background-image: var(--gradient3);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
