@@ -1,0 +1,66 @@
+
+body {
+  background: #000;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+}
+
+.word {
+  position: relative;
+  font-size: 2.8rem;
+  cursor: pointer;
+  transition: filter 0.4s ease;
+}
+
+.word span {
+  position: relative;
+  z-index: 1;
+}
+
+/* 🔹 Cantos em SVG */
+.corners {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+  stroke: #00f0ff;
+  stroke-width: 3;
+  fill: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.corner {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+/* 🔹 Hover animação */
+.word:hover .corners {
+  opacity: 1;
+}
+
+.word:hover .corner {
+  stroke-dashoffset: 0;
+}
+
+/* 🔹 Blur nas outras palavras */
+.container:hover .word {
+  filter: blur(4px);
+}
+
+.container .word:hover {
+  filter: blur(0);
+}

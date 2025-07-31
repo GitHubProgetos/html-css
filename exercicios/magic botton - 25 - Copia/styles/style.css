@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --cor0: #c55ffc;
+    --cor1: #efdcf9;
+    --cor2: #323e42;
+    --cor3: #7954A1;
+
+    --cor4: #EE1B24;
+    --cor5: #211F1F;
+
+    --cor6: #ff2a4c;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: var(--cor5);
+}
+
+.btn {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    color: var(--cor6);
+    background: transparent;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    /*border-radius: 2px;*/
+
+}
+
+.btn:hover {
+    background: var(--cor6);
+    color: #201f1f;
+    transition: 0.5s ease-in-out;
+    /*
+    box-shadow: 0 0 5px var(--cor6),
+                0 0 25px var(--cor6),
+                0 0 50px var(--cor6),
+                0 0 200px var(--cor6);
+    */
+    /*
+     box-shadow: 0 0 3px var(--cor6),
+                0 0 12px var(--cor6),
+                0 0 25px var(--cor6),
+                0 0 100px var(--cor6);
+    */
+    box-shadow: 0 0 1px var(--cor6),
+                0 0 1px var(--cor6),
+                0 0 1px var(--cor6),
+                0 0 1px var(--cor6);
+
+}
+
+.btn::before,
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition: top 0.5s ease-in-out , left 0.5s ease-in-out;
+    z-index: -1; /* para ficar por cima */
+}
+    
+.btn::before {
+    border-left: 2px solid var(--cor6);
+    border-top: 2px solid var(--cor6);
+    /*border-radius: 2px;/**/
+    top: -8px;
+    left: -8px;
+}
+
+.btn::after {
+    border-right: 2px solid var(--cor6);
+    border-bottom: 2px solid var(--cor6);
+    /*border-radius: 2px;/**/
+    top: 8px;
+    left: 8px;
+}
+
+.btn:hover::before,
+.btn:hover::after {
+    top: 0;
+    left: 0;
+    transition: top 0.2s ease-in-out , left 0.2s ease-in-out;
+}

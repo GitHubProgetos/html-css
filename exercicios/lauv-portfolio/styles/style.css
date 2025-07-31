@@ -1,0 +1,126 @@
+
+body {
+  background: #000;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+.word {
+  position: relative;
+  font-size: 2.8rem;
+  cursor: pointer;
+  transition: filter 0.3s ease-in-out;
+}
+
+/* 🔹 QUATRO CANTOS AZUIS */
+.word::before,
+.word::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #00f0ff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.word::before {
+  top: -8px;
+  left: -8px;
+  border-right: none;
+  border-bottom: none;
+  transform: translate(-5px, -5px);
+}
+
+.word::after {
+  bottom: -8px;
+  right: -8px;
+  border-left: none;
+  border-top: none;
+  transform: translate(5px, 5px);
+}
+
+/* 🔹 USANDO SPANS EXTRAS COM PSEUDO-ELEMENTOS PARA OS OUTROS 2 CANTOS */
+.word::part1,
+.word::part2 {
+  content: "";
+}
+
+.word::before,
+.word::after {
+  opacity: 0;
+}
+
+.word:hover::before,
+.word:hover::after {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* 🔹 CANTOS SUPERIOR DIREITO E INFERIOR ESQUERDO */
+.word::before,
+.word::after,
+.word::upper-right,
+.word::bottom-left{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #00f0ff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.word::before {
+  border-right: none;
+  border-bottom: none;
+}
+
+.word::after {
+  border-left: none;
+  border-top: none;
+}
+
+/* Criando com pseudo-elementos adicionais */
+.word::after {
+  bottom: -8px;
+  right: -8px;
+}
+
+.word::before {/**/
+  top: -8px;
+  left: -8px;
+}
+
+.word:hover::before,
+.word:hover::after {
+  opacity: 1;
+}
+
+.word:hover::before {
+  transform: translate(0, 0);
+}
+
+.word:hover::after {
+  transform: translate(0, 0);
+}
+
+/* 🔹 DESFOCAR OUTRAS PALAVRAS */
+.container:hover .word {
+  filter: blur(4px);
+}
+
+.container .word:hover {
+  filter: blur(0);
+}
+
+
