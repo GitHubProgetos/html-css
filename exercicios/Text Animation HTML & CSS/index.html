@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        @keyframes char-transform {
+            0% {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+            70% {
+                transform: translateY(-6%);
+            }
+            90% {
+                transform: translateY(1%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0%);
+
+            }
+        }
+
+      
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: monospace;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            animation: sub 1.5s ease-in-out;
+            background-color: #cec8c8;
+            
+        }
+
+        h1 {
+            animation: char-transform 1.5s ease-in-out;
+            font-size: 60px;
+            color: #1e1e1e;
+        }
+
+        [data-splitting] {
+            animation: char-transform 1.5s ease-in-out;
+        }
+
+        [data-splitting] span {
+            display: inline-block;
+        }
+     
+    </style>
+
+
+    <div data-splitting>
+        <h1>Animation...</h1>
+    </div>
+
+    
+    
+</body>
+</html>

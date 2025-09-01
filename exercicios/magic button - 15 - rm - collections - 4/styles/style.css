@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient( 90deg,#636262,0.5%, #DDDDDD,#DDDDDD, #DDDDDD,#DDDDDD, #828282cc);
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 1px;
+    font-size: 13px;/*14px*/
+    padding-right: 15px;
+    text-transform: uppercase;
+    font-weight: inherit;/*não tem*/
+}
+
+ion-icon {
+    font-size: 22px;
+    vertical-align: -4px;/*centraliza a arrow exatamente ão centro*/
+}
+
+.cta ion-icon {
+    /*transform: translateX(-8px);*/
+    transition: all 0.4s ease-in;
+    margin-left: 1px;
+    /*opacity: 0;*/
+}
+
+.cta:hover ion-icon {
+    /*transform: translateX(0);*/
+    transform: rotate(360deg);
+    /*opacity: 1;*/
+}
+
+.cta:active ion-icon {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 64%;
+    transform: scaleX(0);
+    height: 1px;/**/
+    bottom: 3px;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.space {
+    margin-left: -4px;
+}
+
+
