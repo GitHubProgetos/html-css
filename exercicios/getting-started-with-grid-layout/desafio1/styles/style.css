@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 80px 1fr 80px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 100vw;
+    height: 100vh;
+    /*
+    grid-auto-flow: row;
+    grid-auto-flow: column;
+    */
+}
+
+.topo {
+    background-color: black;
+    color: white;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-row: 1 / 2;/*shorthand*/
+
+    grid-row: 1 / span 1;/*shorthand*/
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-column: 1 / 4;/*shorthand*/
+    grid-column: 1 / span 3;/*shorthand*/
+
+    grid-area: 1 / 1 / 2 / 4;/*shorthand*/
+
+    display: grid;
+    place-content: center;
+}
+
+.menu {
+    background-color:rgb(82, 78, 78);
+    
+    color: white;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-row: 2 / 3;/*shorthand*/
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-column: 1 / 4;/*shorthand*/
+
+    grid-area: 2 / 1 / 3 / 4;/*shorthand*/
+    display: grid;
+    place-content: center;
+}
+
+.principal {
+    background-color: blue;
+    
+    color: white;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    grid-row: 3 / 4;/*shorthand*/
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-column: 1 / 3;/*shorthand*/
+
+    grid-area: 3 / 1 / 4 / 3;/*shorthand*/
+    display: grid;
+    place-content: center;
+}
+  
+
+.secundario {
+    background-color: blueviolet;
+    
+    color: white;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    grid-row: 3 / 4;/*shorthand*/
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-column: 3 / 4;/*shorthand*/
+
+    grid-area: 3 / 3 / 4 / 4;/*shorthand*/
+    display: grid;
+    place-content: center;
+}
+
+
+.rodape {
+    background-color: crimson;
+    
+    color: white;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+    grid-row: 4 / 5;/*shorthand*/
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-column: 1 / 4;/*shorthand*/
+
+    grid-area: 4/ 1 / 5 / 4;/*shorthand*/
+    display: grid;
+    place-content: center;
+}
+

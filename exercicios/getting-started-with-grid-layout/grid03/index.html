@@ -10,11 +10,14 @@
            border: 1px solid black;
            display: grid;
 
+
            grid-template-columns: 120px 120px 120px;
+           grid-template-columns: repeat(3,120px);
            grid-template-rows: 80px 80px 80px;
+           grid-template-rows: repeat(3,80px);
            grid-template: repeat(3,80px) / repeat(3,120px);/*shorthand*/ 
 
-           grid-auto-flow: column;
+           grid-auto-flow: column;/*Cria uma linha ou coluna automatica Altera a direção do grid auto rows e columns*/
 
            grid-auto-rows: 80px;
            grid-auto-columns: 120px;
