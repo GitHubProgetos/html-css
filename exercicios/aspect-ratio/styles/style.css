@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #2a2a2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.aspect-ratio{
+    background-color: #e89a53;
+    width: 300px; /*% ou vw*/
+
+    /*height: 200px;*/
+    aspect-ratio: 16 / 9;/* <== mantem a proporção sempre retangular independente do tamanho do width*/
+}
+
+
+/* aspect-ratio: 3/2; */
+/* aspect-ratio: 16/9; */
+/* aspect-ratio: 4/3; */
+/* aspect-ratio: 21/9; */
+/* aspect-ratio: 1/1; */
+
+/*Se quiser deixar respansivo é só no width largura colocar um valor relativo exemplo 100% ou 100vw*/
+
+

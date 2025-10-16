@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/html.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/09cf91cb67.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+
+    </nav>
+    
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const ul = document.querySelector('ul');
+        menuToggle.addEventListener('click', () => {
+            ul.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

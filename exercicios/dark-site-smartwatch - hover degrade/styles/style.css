@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@font-face {
+    font-family: 'Researcher';
+    src: url('researcher-researcher-bold-700.ttf') format('opentype'), url('') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c4c4cc;
+}
+
+
+
+nav h2 {
+    letter-spacing: 2px;
+    /*color: rgb(151, 40, 255);*/
+    color: #996dff;
+    font-size: 26px;
+    font-family: 'Researcher';
+    
+    /**/
+    
+    
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    /*background-image: linear-gradient(to right,#6a34ca 52%, #64e9ff );*/ 
+    /*background-image: linear-gradient(to right, #f7ba2b ,#f7ba2b, #ea5358);*/
+    background-clip: text;
+    color: transparent;
+}
+
+body {
+    overflow: hidden;
+}
+
+.main {
+   height: 100vh;
+   width: 100vw;
+   /*background-color: #111;*/
+   background-color: #1b1b1df6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 5vw;
+    width: 100vw;/**/
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    /*
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    */
+}
+
+nav ul li {
+    font-size: 16px;
+}
+
+nav ul li a {
+    list-style: none;
+    margin-right: 2rem;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 16px;
+    font-weight: lighter;
+    /*font-style: oblique;*/
+    /*border-bottom: 1px solid #ffffff3a;*/
+     font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 3px 0;
+}
+
+nav ul li a {
+
+    background: linear-gradient(
+        to right,
+        #262627f6,
+        #222224f6
+    ),
+    linear-gradient(
+        to right,
+        #f7ba2b,
+        #ea5358
+    );
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 320ms;
+
+}
+
+nav ul li a:hover {
+    background-size: 0 2px, 100% 2px;
+}
+
+/*
+nav ul li a {
+    border-bottom: 1px solid #ffffff3a;
+    padding-bottom: 2px;
+    z-index: 1;
+
+}
+
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+   
+    left: 0;
+    height: 1px;
+    width: 100%;
+    border-radius: 25px;
+    transform: scaleX(0);
+    background: #c4c4cc;
+    transform-origin: right;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    z-index: 2;
+}
+*/
+
+
+.hero {
+    width: 100vw;
+    height: calc(100vh - 75px);
+    display: flex;
+}
+
+.hero .left {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 120px;
+   /*align-items: center;*/
+   /*float: left;*/
+   margin-top: -25px;
+}
+
+.hero .left h1 {
+    font-size: 49px;
+    letter-spacing: 2px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    /*
+    font-weight: 800;
+    margin-bottom: 10px;
+    */
+}
+
+.hero .left button {
+   width: fit-content;
+   padding: 13px 53px;
+   width: 280px;
+   height: 62px;
+   margin-top: 20px;
+   color: black;
+   cursor: pointer;
+   border: none;
+   /*background-color: rgb(135, 52, 252);*/
+   background-image: linear-gradient(to right, #f7ba2b ,#f7ba2b, #ea5358);
+   background-size: 100%;
+   border-radius: 10px;
+   font-size: 19px;
+   letter-spacing: 2px;
+   outline: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+   /*margin-right: 20px;*/
+}
+
+.left p {
+    margin-top: 25px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 23px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.hero .right {
+    width: 50%;
+    height: 100%;
+    /*float: right;*/
+}
+
+/*=====================================*/
+/*
+.dark::before {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    right: -5%;
+    width: 15rem;
+    height: 12rem;
+    border-radius: 50%;
+    background: #c4c4ccd7;
+    filter: blur(100px);
+}
+*/

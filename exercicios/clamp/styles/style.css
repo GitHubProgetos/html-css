@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #2a2a2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.aspect-ratio{
+    background-color: #e89a53;
+    width: clamp(200px, 50vw, 400px);
+    aspect-ratio: 16 / 9;
+}
+
+/*
+    clamp(min, ideal, max)
+*/
+
+/*
+    width: clamp(200px, 50vw, 400px);
+                mínimo  ideal  máximo
+*/
+
+
+
+
+
