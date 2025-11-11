@@ -1,0 +1,9 @@
+
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('nav ul').classList.toggle('active')
+    })
+
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+    var navUl = document.querySelector('nav ul');
+    navUl.classList.toggle('transition-menu');
+    });

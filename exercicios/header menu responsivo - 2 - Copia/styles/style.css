@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #1e1e1e;
+   padding: 20px 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    transition: display 0.5s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+.logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+   
+.active {
+    display: block;
+    position: absolute;
+    background-color: #1e1e1e;
+    top: 66px;
+    left: calc(50% - 12.5%); /* Calcula a posição do menu no centro independente do tamanho da tela */
+    width: 25%; /* Ajuste o tamanho do menu conforme necessário */
+    padding: 5px 0px;
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+}
+
+    .active li {
+        margin: 10px 0;
+    }
+}
+
+/**/
+
+@keyframes expandMenu {
+    0% { opacity: 0; height: 0;}
+    100% { opacity: 1; height: auto; }
+}
+
+nav ul.transition-menu {
+    display: block;
+    animation: expandMenu 0.5s ease;
+}
+
+

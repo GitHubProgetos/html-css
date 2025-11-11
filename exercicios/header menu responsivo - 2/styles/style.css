@@ -7,85 +7,84 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-.logo a {
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: bolder;
-    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 55px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-    background-color: #1e1e1e;
-
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #1e1e1e;
+   padding: 20px 50px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 40px;
-
-
+    gap: 20px;
     transition: display 0.5s ease;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #fff;
     letter-spacing: 2px;
+    font-weight: 100;
 }
 
 .menu-toggle {
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
     display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
 }
 
-@media (max-width:700px) {
+.logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
 
+@media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
-
     nav ul {
         display: none;
-        
     }
-
+    /*
     .active {
         display: block;
         position: absolute;
-        top: 65%;
+        background-color: #1e1e1e;
+        top: 50px;
         left: 0;
         width: 100%;
-        background-color: #1e1e1e;
-        padding: 10px 50px;
+        padding: 20px 0;
         text-align: center;
-        margin-top: 20px;
-        border-radius: 0 0 50px 50px;
-
     }
-
-    .active li {
-        margin: 12px 0;
-    }
-    
+    */
+.active {
+    display: block;
+    position: absolute;
+    background-color: #1e1e1e;
+    top: 66px;
+    left: calc(50% - 17.5%); /* Adicionado */
+    width: 40%; /* Alterado para 60% */
+    padding: 5px 0px;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
 }
 
-/*===================================*/
+
+
+    .active li {
+        margin: 10px 0;
+    }
+}
+
+/**/
 
 @keyframes expandMenu {
     0% { opacity: 0; height: 0;}

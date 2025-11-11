@@ -11,33 +11,16 @@
 <body>
 
     <nav>
-
+        <div class="logo">LOGO</div>
         <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
-
-        <div class="logo">
-            <a href="#">Logo</a>
-        </div>
-
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
-
     </nav>
-    
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const ul = document.querySelector('ul');
-        menuToggle.addEventListener('click', () => {
-            ul.classList.toggle('active');
-        });
 
-
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-        var navUl = document.querySelector('nav ul');
-        navUl.classList.toggle('transition-menu');
-});
-    </script>
+    <script src="scripts/scritp"></script>
 </body>
 </html>
