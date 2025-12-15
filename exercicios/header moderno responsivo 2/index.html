@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/html.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/09cf91cb67.js" crossorigin="anonymous"></script>
+    <title>HEADER RESPONSIVO</title>
+</head>
+
+<body>
+
+    <button id="open-sidebar-button" onclick="openSidebar()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav id="navbar">
+
+        <ul>
+
+            <li><button id="close-sidebar-button" onclick="closeSidebar()"><i class="fa-solid fa-xmark"></i></button></li>
+
+            <li class="home-li"><a class="active-link" href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="features.html">Features</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+            <li><a href="login.html">Login</a></li>
+
+            <li><a class="accent-link" href="signup.html">Sign Up</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div id="overlay" onclick="closeSidebar()"></div>
+    
+    <main>
+
+        <h1>Accessible Navbar</h1>
+
+        <p>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, iure quos? Error reprehenderit quisquam perspiciatis ipsa recusandae eos earum vero voluptates, eveniet pariatur natus officiis quasi, ducimus dolore molestiae deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempore facere fugiat repellendus delectus facilis dolorem similique reiciendis molestias recusandae laboriosam, sit mollitia exercitationem quibusdam quisquam itaque enim, laudantium corrupti.
+
+        </p>
+
+    </main>
+    
+
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>

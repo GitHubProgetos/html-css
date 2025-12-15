@@ -1,17 +1,10 @@
 
 const navbar = document.getElementById('navbar');
 
-
-
-
-
-
-function openSidebar() {
+function openSidebar(){
     navbar.classList.add('show');
-    
 }
-function closeSidebar() {
+
+function closeSidebar(){
     navbar.classList.remove('show');
-    
 }
-//updateNavbar(media);
